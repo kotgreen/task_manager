@@ -1,3 +1,5 @@
+<?php include('db_connect.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,20 +17,26 @@
     <table class="table table-hover" style="width: 900px; margin:auto">
         <thead>
             <th>ID</th>
-            <th>Date</th>
+            <th>Created_at</th>
             <th>Task</th>
             <th>Archive</th>
             <th>Delete</th>
         </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>23.04</td>
-                <td>my first task</td>
-                <td>arhivate</td>
-                <td>delete</td>
-            </tr>
-        </tbody>
+        <?php
+        while ($row = $query->fetch()) {
+        ?>
+            <tbody>
+                <tr>
+                    <td><?= $row['id'] ?></td>
+                    <td><?= $row['created_at'] ?></td>
+                    <td><?= $row['task'] ?></td>
+                    <td>arhivate</td>
+                    <td>delete</td>
+                </tr>
+            </tbody>
+        <?php
+        }
+        ?>
     </table>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
