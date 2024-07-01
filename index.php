@@ -31,7 +31,7 @@
                     <td><?= $row['created_at'] ?></td>
                     <td><?= $row['task'] ?></td>
                     <td>arhivate</td>
-                    <td><button type="button" class="btn btn-danger">Delete</button></td>
+                    <td><a href="delete_task.php?id=<?= $row['id'] ?>"><button type="button" class="btn btn-danger">Delete</button></a></td>
                 </tr>
             </tbody>
         <?php
