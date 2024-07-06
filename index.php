@@ -7,10 +7,12 @@
             <th>ID</th>
             <th>Created_at</th>
             <th>Task</th>
-            <th>Archive</th>
+            <th>Done</th>
             <th>Delete</th>
         </thead>
         <?php
+        $sql = "SELECT * FROM `tasks` WHERE `done` = '0'";
+        $query = $pdo->query($sql);
         while ($row = $query->fetch()) {
         ?>
             <tbody>
@@ -18,8 +20,8 @@
                     <td><?= $row['id'] ?></td>
                     <td><?= $row['created_at'] ?></td>
                     <td><?= $row['task'] ?></td>
-                    <td>arhivate</td>
-                    <td><a href="delete_task.php?id=<?= $row['id'] ?>"><button type="button" class="btn btn-danger">Delete</button></a></td>
+                    <td><a href="archive_task.php?id=<?= $row['id'] ?>"><button type="button" class="my_btn" style="color: white; background-color: #00008B;">Done</button></a></td>
+                    <td><a href="delete_task.php?id=<?= $row['id'] ?>"><button type="button" class="my_btn" style="color: white; background-color: #dc3545;">Delete</button></a></td>
                 </tr>
             </tbody>
         <?php
