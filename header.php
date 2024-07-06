@@ -10,4 +10,7 @@
 </head>
 
 <body class="body">
+    <div id="head">
     <h1 id="main_title">My task manager</h1>
+    <a id="archive" href="archive.php">Archive</a>
+    </div>

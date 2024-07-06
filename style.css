@@ -1,8 +1,22 @@
+#head{
+    background-color: black;
+    height: 70px;
+}
+
 #main_title{
     text-align: center;
-    background-color: black;
     color: azure;
     padding: 10px;
+    float: left;
+    width: 90%;
+}
+
+#archive{
+    text-align: center;
+    color: azure;
+    padding: 10px;
+    float: right;
+    width: 10%;
 }
 
 .my_btn {
@@ -16,9 +30,4 @@
 
 .body {
     background-color: #808080;
-}
-
-zzz {
-    background-color: green;
-
 }
