@@ -11,6 +11,6 @@
 
 <body class="body">
     <div id="head">
-    <h1 id="main_title">My task manager</h1>
-    <a id="archive" href="archive.php">Archive</a>
+        <h1 id="main_title"><a href="index.php" style="color: azure; text-decoration: none">My task manager</a></h1>
+        <a id="archive" href="archive.php" style="text-decoration: none">Archive</a>
     </div>

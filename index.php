@@ -23,7 +23,7 @@
                 <td><?= $row['task'] ?></td>
                 <td width="20"><a href="archive_task.php?id=<?= $row['id'] ?>"><button type="button" class="my_btn" style="color: white; background-color: #00008B;">Done</button></a></td>
                 <td width="20"><a href="archive_task.php?id=<?= $row['id'] ?>"><button type="button" class="my_btn" style="color: white; background-color: #696969;">Edit</button></a></td>
-                <td width="20"><a href="delete_task.php?id=<?= $row['id'] ?>"><button type="button" class="my_btn" style="color: white; background-color: #dc3545;">Delete</button></a></td>
+                <td width="20"><a href="delete_task.php?id=<?= $row['id'] ?>&page=index"><button type="button" class="my_btn" style="color: white; background-color: #dc3545;">Delete</button></a></td>
             </tr>
         </tbody>
     <?php
