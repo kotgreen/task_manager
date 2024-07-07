@@ -6,6 +6,7 @@
         <th>ID</th>
         <th>Created_at</th>
         <th>Task</th>
+        <th>End date</th>
         <th>Delete</th>
     </thead>
     <?php
@@ -18,6 +19,7 @@
                 <td width="20"><?= $row['id'] ?></td>
                 <td width="120"><?= $row['created_at'] ?></td>
                 <td><?= $row['task'] ?></td>
+                <td widt="20"><?= $row['end_date'] ?></td>
                 <td width="20"><a href="delete_task.php?id=<?= $row['id'] ?>"><button type="button" class="my_btn" style="color: white; background-color: #dc3545;">Delete</button></a></td>
             </tr>
         </tbody>
